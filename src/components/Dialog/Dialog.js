@@ -10,7 +10,9 @@ class Dialog extends Component {
 
 	render() {
 		return (
-			<div className="dialog" />
+			<div className="dialog">
+				<button type="button" onClick={() => this.props.close()}>CLOSE</button>
+			</div>
 		);
 	}
 }
