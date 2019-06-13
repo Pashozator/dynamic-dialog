@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './View.scss';
+import './View.css';
 import Dialog from '../Dialog/Dialog';
 import { connect } from 'react-redux';
 import { changeDebit } from '../../store/budget.actions';
-import { createDynamicModal, dialog } from '../../dynamic-modal/create-dynamic-modal';
+import { createDynamicModal, dialog } from '../../dynamic-modal/dialog-with-redux';
 
 class View extends Component {
 	openDialog = () => {
@@ -19,7 +19,7 @@ class View extends Component {
 		//
 		// modals.appendChild(node);
 		// ReactDOM.render(component, node);
-		dialog.openDialog(Dialog);
+		dialog.open(Dialog);
 	};
 
 	changeDebit = () => {

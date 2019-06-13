@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Dialog.scss';
+import './Dialog.css';
 import { selectDebit } from '../../store/budget.selectors';
 import { connect } from 'react-redux';
 
